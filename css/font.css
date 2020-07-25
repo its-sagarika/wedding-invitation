@@ -1,0 +1,12 @@
+/* font family Abhaya Libre */
+
+@font-face{
+  font-family: 'Abhaya_Libre';
+  src: url('../fonts/Abhaya_Libre/AbhayaLibre-Regular.ttf');
+}
+
+/* Font family Alex-Brush */
+@font-face{
+  font-family: 'Alex_Brush';
+  src: url('../fonts/Alex_Brush/AlexBrush-Regular.ttf');
+}

@@ -1,0 +1,807 @@
+/* import font file */
+@import url("./font.css");
+
+/* import variable css */
+@import url('./partial/variable.css');
+
+/* import global css */
+@import url('./partial/global.css');
+
+
+/*---- Start Header ----*/
+
+/* logo padding */
+
+
+.header-area .main-menu .navbar .navbar-brand{
+  margin: 0 2rem;
+  padding-bottom: 0;
+
+}
+
+/* logo size */
+.header-area .main-menu .navbar .navbar-brand > img{
+  height: 3.5rem;
+  width: 4rem;
+
+}
+
+/* navbar length */
+.header-area .main-menu .navbar {
+  padding-bottom: 0;
+  padding-right: 4rem;
+ 
+}
+
+/* navbar items width */
+.header-area .main-menu .navbar .nav-items{
+  width: 100%;
+}
+
+/* nav item style */
+.header-area .main-menu .navbar .nav-item .nav-link{
+  font: normal 500 25px/35px var(--libre);
+  /* color: var(--white-text); */
+  color: var(--white-text);
+  display: inline-block;
+}
+
+/* nav item active color */
+/* .header-area .main-menu .navbar-nav .active a{
+  background: var(--primery-color);
+  -webkit-background-clip: text;  /*specify background color to the text
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+} */
+
+/* on hover nav item changes */
+/* .header-area .main-menu .navbar-nav .nav-item > a:hover{
+  background: var(--primery-color);
+  -webkit-background-clip: text;  /*specify background color to the text
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+} */
+
+/* on hover underline */
+.header-area .main-menu .navbar-nav .nav-item .nav-link::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: var(--white-text);
+  transition: width .3s;
+}
+
+.header-area .main-menu .navbar-nav .nav-item .nav-link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+/* header background-image */
+.header-area .background-image{
+ background: url(../assets/background.jpg) ;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+/* text inside header */
+.header-area .background-text{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+
+}
+
+/* heart image style  */
+.header-area .heart-image>img{
+  width: 50%;
+  margin-top: 20%;
+  opacity: .3;
+}
+
+/* background content position*/
+.header-area .background-content{
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+/* background-content color*/
+.header-area .back-color{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-area .background-text h3{
+  font: normal 500 40px/60px var(--libre);
+  color:white;
+  text-align: center;
+}
+
+.header-area .background-text h1{
+  font: normal 500 140px/170px var(--alex);
+  color: var(--white-text);
+}
+
+/* End header */
+
+/* Start photo Area */
+
+.site-main .photo-area{
+  margin: 5rem;
+  
+}
+
+.site-main .photo-area .bride-photo .b-photo ,.g-photo{
+ height: 17rem;
+ width:17rem;
+ overflow: hidden;
+}
+
+.site-main .photo-area .bride-photo .b-photo img , .g-photo img{
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;  
+}
+
+.site-main .photo-area .symbol{
+  font: normal 500 140px/170px var(--alex);
+}
+
+.site-main .photo-area .b-text h4 , .g-text h4{
+  font: normal 500 25px/10px var(--libre);
+  color: var(--secondary-color);
+}
+
+.site-main .photo-area .sub-photo-text h1{
+  font: normal 500 65px/80px var(--alex);
+  color: var(--secondary-color);
+}
+
+.site-main .photo-area .sub-photo-text h3{
+  font: normal 500 25px/35px var(--libre);
+  color:var(--primery-color);
+}
+
+/* End photo Area */
+
+/* Start Timer Area */
+
+.site-main .timer-area{
+  background:url(../assets/time.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.site-main .timer-area .timer-background{
+  background-color:  rgba(8, 8, 8, 0.5);
+}
+
+.site-main .timer-area .timer-content{
+  margin: 3rem 0;
+}
+
+.site-main .timer-area .timer-text h1{
+  font: normal 500 65px/80px var(--alex);
+  color: var(--primery-color);
+}
+
+.site-main .timer-area .timer{
+  display: inline-flex;
+}
+
+.site-main .timer-area .timer div{
+  /*  */
+  color: var(--white-text);
+  padding: 0 1rem;
+}
+
+.site-main .timer-area .timer div >span{
+  font: normal 500 95px/100px var(--libre);
+}
+
+.site-main .timer-area .timer div div{
+  font: normal 500 20px/30px;
+}
+
+/* End Timer Area */
+
+
+/* Start story area */
+
+.site-main #story-area{
+  overflow: hidden;
+ 
+}
+
+.site-main #story-area .story-container{
+  background-color: var(--light-pink-bg);
+  height: 100%;
+  width: 100%;
+   padding: 3rem 0;
+}
+
+.site-main #story-area .story-container .story-row{
+  padding: 4rem 2rem ;
+}
+
+.site-main #story-area .story-container .story-col1{
+  padding: 3rem;  
+}
+
+.site-main #story-area .story-container .story-col1 h4{
+  padding-bottom: 1rem;
+}
+
+.site-main #story-area .story-container .story-col2 img{
+ min-width: 100%;
+ object-fit: cover;
+  min-height: 100%;
+}
+
+/* End story Area */
+
+
+/* Start description Area */
+
+.site-main .description-area{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.site-main .description-area .b-container{
+  margin-top: 3rem;
+  
+}
+
+.site-main .description-area .groom-description{
+  margin-top: 4rem;
+ 
+}
+
+.site-main .description-area .bride-content .bride-social i{
+  background-color:var(--light-pink-bg);
+  padding: .3rem;
+  color: var(--primery-color);
+  
+}
+
+.site-main .description-area .groom-content .groom-social i{
+  background-color:var(--light-gray-bg);
+  padding: .3rem;
+  color: var(--text-gray);
+}
+
+.site-main .description-area .bride-content .bride-social i:hover{
+  background-color:var(--primery-color);
+  color:var(--light-pink-bg);
+  transition: .3s ease;
+  
+}
+
+.site-main .description-area .groom-content .groom-social i:hover{
+  background-color:var(--text-gray);
+  color:var(--light-gray-bg);
+  transition: .3s ease;
+}
+
+/* End description Area*/
+
+/* Start Friend Area */
+.site-main .friends-area .f-cont{
+  margin-top: 4rem ;
+  overflow: hidden;
+}
+
+.site-main .friends-area .f-cont .b-col {
+  padding-right: .1rem;
+}
+
+.site-main .friends-area .f-cont .g-col{
+  padding-left: .1rem;
+}
+
+.site-main .friends-area .f-cont .b-col .bridemate{
+  background-color: var(--light-pink-bg);
+  padding-right: 0;
+  padding-bottom: 2rem;
+}
+
+.site-main .friends-area .f-cont .g-col .groommate{
+  background-color: var(--light-gray-bg);
+  padding-left: 0;
+  padding-bottom: 2rem;
+}
+
+.site-main .friends-area .bridemate h1 ,.groommate h1{
+  font: normal 500 60px/100px var(--alex);
+  padding-top: 3rem;
+}
+
+.site-main .friends-area .bridemate .bride-fnds,.groommate .groom-frnds{
+  overflow: hidden;
+}
+
+.site-main .friends-area .owl-theme .owl-nav [class*="owl-"]:hover{
+  background: transparent;
+	
+}
+
+.site-main .friends-area .owl-nav {
+  
+}
+
+ /* arrow outline disable*/
+.site-main .friends-area  .owl-theme .owl-nav [class*="owl-"]{
+  outline: none;
+  background: transparent;
+}
+
+.site-main .friends-area .frnd-detail{
+  height: 11rem;
+  width: 11rem;
+  margin:.5rem 1.5rem;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.site-main .friends-area .frnd-detail img{
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+.site-main .friends-area .frnd-detail h4{
+  font: normal 500 23px/50px var(--libre);
+}
+
+/* End Friend Area */
+
+/* Start Date Area */
+
+.site-main .date-area{
+  overflow: hidden;
+  width: 100%;
+  background:url(../assets/date.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.site-main .date-area .date-flex{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.site-main .date-area .date-content{
+  margin: 3rem 0;
+}
+
+.site-main .date-area .date-content h1{
+  font: normal 500 70px/90px var(--alex);
+  color: var(--primery-color);
+}
+
+.site-main .date-area .date-content .date{
+  font: normal 500 95px/100px var(--libre);
+  color: var(--white-text);
+}
+
+/* End Date Area*/
+
+
+/* Start Place Area */
+
+.site-main .place-area{
+  padding: 3rem 0;
+}
+
+.site-main .place-area h1{
+  padding: 3rem 0;
+}
+
+.site-main .place-area .place-cont .col1-c,.col2-g{
+  
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+.site-main .place-area .place-cont .col1-p,.col2-a{
+  padding-right: 0;
+  padding-left: 1.5rem;
+}
+
+
+.site-main .place-area .place-cont .place-row{
+  padding-top: 4rem;
+}
+
+.site-main .place-area .place-cont .get-in .get-in-content span , .accomodation .accomodation-content span{
+  display: block;
+}
+
+.site-main .place-area .place-cont .get-in .get-in-content span a , .accomodation .accomodation-content span a{
+  text-decoration: underline;
+  color: var(--primery-color);
+}
+
+.site-main .place-area .place-cont .get-in .get-in-content span a:hover ,.accomodation .accomodation-content span a:hover{
+  text-decoration: none;
+  
+}
+
+/* End Place Area */
+
+/* Start Note Area */
+
+.site-main .note-area{
+  background: url(../assets/celebrate.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 3rem;
+}
+
+.site-main .note-area .note-row{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.site-main .note-area .note-content{
+  padding: 4rem 0;
+}
+
+.site-main .note-area .note-content .note > span{
+  display: block;
+  color: var(--white-text);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font: normal 500 23px/30px var(--libre);
+}
+
+
+.site-main .note-area .note-content .short-heading{
+  font: normal 500 60px/70px var(--alex);
+  color: var(--white-text);
+}
+
+.site-main .note-area .note-content .note .extra{
+  font: normal 500 32px/50px var(--libre);
+}
+
+/* End Note Area */
+
+/* Strat form Area */
+
+.site-main .form-area{
+ background-color: var(--light-pink-bg);
+ padding: 3rem 0;
+}
+
+.site-main .form-area .col2{
+  padding: 4rem 3rem;
+}
+
+.site-main .form-area .col2 .form{
+  box-sizing: border-box;
+}
+
+.site-main .form-area .col2 .form #gname,#email{
+  width: 100%;
+  height: 2rem; 
+}
+
+.site-main .form-area .col2 .form #attend,#about{
+  width: 100%;
+}
+
+.site-main .form-area .col2 .form .radio{
+  margin-bottom: 1rem;  
+}
+
+.site-main .form-area .col2 .form .input1{
+  margin-bottom: .7rem;
+  border-left: 2.5px solid var(--primery-color);
+}
+
+.site-main .form-area .col2 .form .input2{
+  box-sizing: border-box;
+  border-left: 2px solid var(--primery-color);
+}
+
+.site-main .form-area .col2 .form input[type=text],
+input[type=email],select,textarea
+{
+  border: none;
+  padding: 7px;
+  outline: none;
+  font: normal 500 17px/30px var(--libre);
+  
+}
+
+.site-main .form-area .col2 .form label{
+  font:normal 500 17px/30px var(--libre);
+  margin-bottom: 0;
+  padding-right: 1rem;
+}
+
+.site-main .form-area .col2 .form input[type=text]:focus ,input[type=email]:focus{
+  font: normal 500 17px/30px var(--libre);
+  outline: none;
+ 
+}
+
+.site-main .form-area .col2 .form input[placeholder],textarea[placeholder]{
+  /* color: brown; */
+}
+
+.site-main .form-area .col2 .form input[placeholder]:focus,textarea[placeholder]:focus{
+  
+}
+
+.site-main .form-area .col2 .form button{
+  border: none;
+  outline: none;
+  padding: .4rem 1rem;
+  background-color: var(--primery-color);
+  color: var(--white-text);
+  font: normal 500 18px/24px var(--libre);
+  margin-top: 1rem;
+}
+
+.site-main .form-area .col1{
+ 
+  padding-left: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.site-main .form-area .col1 .form-content h4,h5{
+  font: normal 500 25px/30px var(--libre);
+  color: var(--secondary-color);
+}
+
+.site-main .form-area .col1 .form-content h5{
+  font: normal 500 23px/30px var(--libre);
+  color: var(--primery-color);
+}
+
+/* End Form Area */
+
+/* Start Gift Area */
+
+.site-main .gift-area{
+  margin: 3rem 0;
+  padding: 5rem 0;
+}
+
+.site-main .gift-area .gift-content h4{
+  font: normal 500 27px/38px var(--libre);
+  color: var(--secondary-color);
+  
+}
+
+.site-main .gift-area .gift-content h5{
+  font: normal 500 24px/34px var(--libre);
+  color: var(--primery-color);
+}
+
+.site-main .gift-area .logo-img2 .img4{
+  max-height:auto;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.site-main .gift-area .logo-img1 .img2 {
+  margin-top: 1rem;
+ padding: 1rem;
+ max-height:auto;
+  width: 90%;
+}
+
+.site-main .gift-area .logo-img1 .img1,.logo-img2 .img3{
+  max-height:auto;
+  width: 90%;
+ }
+
+.site-main .gift-area .col1{
+ 
+  padding-left: 1rem;
+}
+
+
+/* End Gift Area */
+
+/* Strat blog Area */
+
+.site-main .blog-area{
+  background-color: var(--light-gray-bg);
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+.site-main .blog-area .blog-card{
+  padding: 30px 0px;
+  margin: 10px;
+}
+
+.site-main .blog-area .blog-card img{
+  height: 18rem;
+  max-width:100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.site-main .blog-area .card-theme .blog-card {
+  margin: 1rem .3rem;  
+}
+
+.blog-area .owl-theme .owl-nav [class*="owl-"]:hover{
+  background: transparent;
+  color: var(--secondary-color);
+	
+}
+
+ /* arrow outline disable*/
+.site-main .blog-area .owl-theme .owl-nav [class*="owl-"]{
+  outline: none;
+  color: var(--text-gray);
+}
+
+.site-main .blog-area .owl-carousel.owl-loaded {
+  margin: 0 auto;
+  position: static;
+
+}
+
+.site-main .blog-area .owl-nav .owl-prev {
+  position: absolute;
+  margin: 0; 
+  right: 93%;
+ transform: translateY(-500%);
+}
+
+.site-main .blog-area .owl-nav .owl-next {
+  position: absolute;
+  margin: 0; 
+  left: 93%;
+  transform: translateY(-500%);
+  
+}
+
+.site-main .blog-area .blog-card .card-img{
+  width: 100%;
+  transition: all 8s ease;
+  
+}
+
+.site-main .blog-area .blog-card .card-img:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.site-main .blog-area .blog-card > div{
+  overflow: hidden;
+}
+
+.site-main .blog-area .blog-card .title{
+  top: 16rem;
+  bottom: 14.6rem;
+  background:linear-gradient(to bottom, transparent 10% ,white 90%);
+  margin-right: 1.5rem;
+  margin-left: .3rem;
+  
+}
+
+.site-main .blog-area .blog-card .card-title{
+  color: var(--secondary-color);
+  font: normal 500 26px/30px var(--libre);
+    
+}
+
+.site-main .blog-area .blog-card .card-title:hover{
+  color: var(--primery-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.site-main .blog-area .blog-card .card-text{
+  color: var(--text-gray);
+  font: normal 500 20px/30px var(--libre);
+
+}
+
+.site-main .blog-area .blog-card .card-body .view{
+  color: var(--secondary-color);
+  font: normal bold 18px/30px var(--libre);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.site-main .blog-area .blog-card .card-body .view::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primery-color);
+  transition: width .3s;
+}
+
+.site-main .blog-area .blog-card .card-body .view:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+/* End Blog Area */
+
+/* Start Welcome Area */
+
+.site-main .welcome-area{
+  background: url(../assets/blog/blog1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.site-main .welcome-area .welcome-container{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.site-main .welcome-area .welcome-content{
+  margin: 3rem 0;
+}
+
+.site-main .welcome-area .welcome-content h3{
+  font: normal 500 65px/80px var(--alex);
+  color: var(--primery-color);
+}
+
+.site-main .welcome-area .welcome-content .date{
+  font: normal 500 95px/100px var(--libre);
+  color: var(--white-text);
+}
+
+/* End Welcome Area */
+
+/* Start Footer Area */
+
+.site-main .footer-area{
+  background: var(--primery-color);
+}
+
+.site-main .footer-area .footer-content{
+  margin: 1.5rem 0;
+}
+
+.site-main .footer-area .footer-content img{
+  width: 3.5rem;
+}
+
+.site-main .footer-area .footer-content h4{
+  font: normal 500 17px/25px var(--libre);
+  color: var(--white-text);
+}
+
+/* End Footer Area */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
